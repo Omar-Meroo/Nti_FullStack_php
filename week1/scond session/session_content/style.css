@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.item {
+    background-color: teal;
+    background-image: url(images/R.jfif); 
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    width: 600px;
+    height: 600px;
+}
+
+.parent{
+    margin: auto;
+}
+
+.mail{
+    background-color: aqua;
+    width: 25%;
+    text-align: center;
+    float: left;
+    padding: 20px;
+    
+}
+.inner-item{
+    
+    background-color: gold;
+}
+.inner-item img{
+    width: 90%;
+    border-radius: 50%;
+}
+.inner-item p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    
+}
+.line{
+    width: 25%;
+    margin: auto;
+    height: 3px;
+    color: azure;
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width:1200px) and (min-width:992){
+
+    .mail{
+        width: 25%;
+    }
+
+}
+@media screen and (max-width:991px) and (min-width:768){
+
+    .mail{
+        width: 25%;
+    }
+
+}
+@media screen and (max-width:767px) and (min-width:600){
+
+    .mail{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:599px){
+
+    .mail{
+        width: 100%;
+    }
+
+}
+    
