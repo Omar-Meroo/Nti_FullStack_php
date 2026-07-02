@@ -1,0 +1,21 @@
+
+.taxi{
+    position: relative;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-direction: alternate;
+
+
+}
+
+
+
+@keyframes move {
+    0%{left: 0;top: 0; transform: rotateY(180deg);}
+    25%{left: 700px;top: 0; transform: rotateY(180deg);}
+    75%{left: 700px;top: 0; transform: rotateY(360deg);}
+    100%{left: 0;top: 0; transform: rotateY(360deg);}
+
+
+}
+
