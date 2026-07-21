@@ -8,7 +8,7 @@
     <title>E-Mora</title>
 </head>
 
- 
+
 <?php include "navbar.php"; ?>
 
 <body id="#Home">

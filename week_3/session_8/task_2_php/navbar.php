@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-     <header>
+    <header>
         <div class="logo">
             <h1>E-Mora</h1>
         </div>
@@ -24,7 +24,7 @@
                 <?php 
                 
                 if(isset($_SESSION['email'], $_SESSION['password'])): ?>
-    <li><a href="profile.php">Account</a></li>
+    <li><a href="profile.php">Profile</a></li>
 
 <?php else: ?>
     <li><a href="account.php">Account</a></li>
@@ -34,10 +34,18 @@
             </ul>
 
             <ul>
-                <li>
-                    <a href="logout.php"  class="btn btn-primary" style="background-color:rgb(61, 119, 146);
-                    border:none;">Logout</a>
-                </li>
+                <?php 
+                
+                if(isset($_SESSION['email'], $_SESSION['password'])): ?>
+    <li><a href="logout.php"  class="btn btn-primary" style="background-color:rgb(61, 119, 146);
+                    border:none;">Logout</a></li>
+
+<?php else: ?>
+    <li><a href="account.php"  class="btn btn-primary" style="background-color:rgb(61, 119, 146);
+                    border:none;">Login</a></li>
+    
+
+<?php endif; ?>
             </ul>
 
         </nav>

@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
 
     foreach($first_validates as $validate_name=>$validate_value){
 
- $value= filter_input(INPUT_POST,$validate_name,$validate_value['filter'],$validate_value['my_options']?? null);
+$value= filter_input(INPUT_POST,$validate_name,$validate_value['filter'],$validate_value['my_options']?? null);
 
 if(empty($_POST[$validate_name])){
     $errors[$validate_name] = "You must fill ".$validate_name;
@@ -50,7 +50,7 @@ if(isset($_POST['Save'])){
 
     foreach($validates as $validate_name=>$validate_value){
 
- $value= filter_input(INPUT_POST,$validate_name,$validate_value['filter'],$validate_value['my_options']?? null);
+$value= filter_input(INPUT_POST,$validate_name,$validate_value['filter'],$validate_value['my_options']?? null);
 
 if(empty($_POST[$validate_name])){
     $perrors[$validate_name] = "You must fill ".$validate_name;

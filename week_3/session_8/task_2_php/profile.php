@@ -1,4 +1,5 @@
-<?php
+<?php include "navbar.php"; ?>
+<?php 
 session_start();
 if(isset($_SESSION['perrors'])){
   foreach($_SESSION['perrors'] as $perror){
@@ -21,7 +22,7 @@ if(isset($_SESSION['perrors'])){
     <title>Document</title>
 </head>
 <body>
-  <?php include "navbar.php"; ?>
+
     <form action="main.php" method="post" class="w-75 m-auto my-4 ">
       <h1>Update Your Profile</h1>
 
