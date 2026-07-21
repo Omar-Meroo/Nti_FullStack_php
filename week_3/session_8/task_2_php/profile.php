@@ -1,6 +1,7 @@
-<?php include "navbar.php"; ?>
+
 <?php 
 session_start();
+include "navbar.php";
 if(isset($_SESSION['perrors'])){
   foreach($_SESSION['perrors'] as $perror){
     ?>
